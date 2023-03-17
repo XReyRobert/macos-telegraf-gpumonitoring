@@ -10,6 +10,15 @@ You like it? You use it? It saved you a couple of hours?
 Hey 👋👋👋 [You can now buy me a coffee](https://www.buymeacoffee.com/xrrxrr)! ☕️ 
 
 
+Disclaimer, this code has been tested on: 
+
+ * Intel Mac Pro with AMD Radeon Pro W6600
+ * Apple Silicon Macbook M1 Ultra
+  
+ It hasn't been tested on multi-gpu setup but should be quite easily adapted.
+
+
+
 ## Installation
 
 * Copy **gpuPerformanceStatistics** to */usr/local/bin*
@@ -47,6 +56,7 @@ Here's an example of **telegraf.conf**
   bucket = "XRRMonitoring"
 ```
 
+
 ## main AMD GPU metrics (and more)
 
 * Core Clock (*MHz*)
@@ -71,5 +81,6 @@ Here's an example of **telegraf.conf**
 ![Apple silicon Screenshot](https://github.com/XReyRobert/macos-telegraf-gpumonitoring/raw/main/screenshots/screenshot_applesilicon.png?raw=true)
 
 You like it? You use it? It saved you a couple of hours? 
+
 Hey 👋👋👋 [You can now buy me a coffee](https://www.buymeacoffee.com/xrrxrr)! ☕️ 
 
