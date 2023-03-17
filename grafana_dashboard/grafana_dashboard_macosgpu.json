@@ -29,12 +29,37 @@
   "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "input",
+        "uid": "VaWhfA1Vk"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 23,
+        "x": 0,
+        "y": 0
+      },
+      "id": 32,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"font-size: 2em;\">\n  <p>You like it? You use it? It saved you a couple of hours?</p>\n  <p>Hey 👋 <a href=\"https://www.buymeacoffee.com/xrrxrr\">You can now buy me a coffee</a>! ☕️</p>\n</div>\n",
+        "mode": "html"
+      },
+      "pluginVersion": "9.3.2",
+      "transparent": true,
+      "type": "text"
+    },
+    {
       "collapsed": true,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 8
+        "y": 4
       },
       "id": 11,
       "panels": [
@@ -138,7 +163,7 @@
             "h": 8,
             "w": 12,
             "x": 0,
-            "y": 9
+            "y": 5
           },
           "id": 13,
           "options": {
@@ -178,7 +203,7 @@
             "h": 2,
             "w": 12,
             "x": 12,
-            "y": 9
+            "y": 5
           },
           "id": 25,
           "options": {
@@ -247,7 +272,7 @@
             "h": 6,
             "w": 6,
             "x": 12,
-            "y": 11
+            "y": 7
           },
           "id": 18,
           "options": {
@@ -339,7 +364,7 @@
             "h": 6,
             "w": 6,
             "x": 18,
-            "y": 11
+            "y": 7
           },
           "id": 20,
           "options": {
@@ -445,7 +470,7 @@
             "h": 8,
             "w": 12,
             "x": 0,
-            "y": 17
+            "y": 13
           },
           "id": 16,
           "options": {
@@ -540,7 +565,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 9
+        "y": 5
       },
       "id": 9,
       "panels": [],
@@ -619,7 +644,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 10
+        "y": 6
       },
       "id": 7,
       "options": {
@@ -658,7 +683,7 @@
         "h": 2,
         "w": 12,
         "x": 12,
-        "y": 10
+        "y": 6
       },
       "id": 26,
       "options": {
@@ -727,7 +752,7 @@
         "h": 6,
         "w": 6,
         "x": 12,
-        "y": 12
+        "y": 8
       },
       "id": 22,
       "options": {
@@ -819,7 +844,7 @@
         "h": 6,
         "w": 6,
         "x": 18,
-        "y": 12
+        "y": 8
       },
       "id": 23,
       "options": {
@@ -978,7 +1003,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 18
+        "y": 14
       },
       "id": 4,
       "options": {
@@ -1080,7 +1105,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 18
+        "y": 14
       },
       "id": 21,
       "options": {
@@ -1243,7 +1268,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 26
+        "y": 22
       },
       "id": 2,
       "options": {
@@ -1367,7 +1392,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 26
+        "y": 22
       },
       "id": 5,
       "options": {
@@ -1430,13 +1455,13 @@
     ]
   },
   "time": {
-    "from": "now-30m",
+    "from": "now-12h",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "macos gpu",
   "uid": "1zigjla4z",
-  "version": 18,
+  "version": 21,
   "weekStart": ""
 }
