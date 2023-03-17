@@ -1,3 +1,6 @@
+Hey 👋 [You can now buy me a coffee](https://www.buymeacoffee.com/xrrxrr)! ☕️ 
+in html div
+
 # macos-telegraf-gpumonitoring
 macos-telegraf-gpumonitoring
 
