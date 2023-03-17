@@ -2,10 +2,8 @@ You like it? You use it? It saved you a couple of hours?
 Hey 👋👋👋 [You can now buy me a coffee](https://www.buymeacoffee.com/xrrxrr)! ☕️ 
 
 # macos-telegraf-gpumonitoring
-macos-telegraf-gpumonitoring
 
-
-Quickly sharing a tool to get GPU information on intel mac (AMD GPU) and on Apple silicon (more limited)
+Sharing a tool to get GPU information on intel mac (AMD GPU) and on Apple silicon (more limited)
 
 This tool is used with telegraf to populate an Influxdb bucket to display stats in grafana;
 
