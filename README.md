@@ -28,7 +28,7 @@ Disclaimer, this code has been tested on:
 
 GPU performance statistics are exported using Apple IOKitframework as a JSON. 
 
-Telegraf is configured to invoke **gpuPerformanceStatistics** (command line app) and parse the JSON output to ingest all available fields.
+Telegraf is configured to invoke **gpuPerformanceStatistics** and parse the JSON output to ingest all available fields and send them to influxdb.
 
 Here's an example of **telegraf.conf** 
 
@@ -44,11 +44,12 @@ Here's an example of **telegraf.conf**
   urls = ["http://yourinfluxdbserver:8086"]
   ## Token for authentication.
   token = "yourtoken"
+  
   ## Organization is the name of the organization you wish to write to; must exist.
   organization = "yourorganisation""
 
   ## Destination bucket to write into.
-  ## Change it but update the dashboard accordingly (hint: find/replace into the grafana dashboard  json before importing it)
+  ## Change it and update the dashboard accordingly (hint: find/replace into the grafana dashboard json BEFORE importing it into grafana, you'll save time)
   bucket = "XRRMonitoring"
 ```
 
