@@ -9,7 +9,7 @@ This tool is used with telegraf to populate an Influxdb bucket to display stats 
 
 GPU performance statistics are exported using Apple IOKitframework as a JSON. 
 Telegraf is configured to invoke gpuPerformanceStatistics and parse the json to ingest all available fields)
-`
+```
 [[inputs.execd]]
   command = ["/usr/local/bin/gpuPerformanceStatistics", "IOAccelerator"]
   name_override = "macosgpu"
@@ -27,5 +27,5 @@ Telegraf is configured to invoke gpuPerformanceStatistics and parse the json to 
   ## Destination bucket to write into.
   ## Change it but update the dashboard accordingly (hint: find/replace into the grafana dashboard  json before importing it)
   bucket = "XRRMonitoring"
-`
+```
 
