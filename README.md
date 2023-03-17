@@ -85,7 +85,6 @@ Here's an example of **telegraf.conf**
 
 ![Apple silicon Screenshot](https://github.com/XReyRobert/macos-telegraf-gpumonitoring/raw/main/screenshots/screenshot_applesilicon.png?raw=true)
 
-You like it? You use it? It saved you a couple of hours? 
-
+You like it? You use it? It saved you a couple of hours?
 Hey 👋👋👋 [You can now buy me a coffee](https://www.buymeacoffee.com/xrrxrr)! ☕️ 
 
