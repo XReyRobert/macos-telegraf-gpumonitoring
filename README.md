@@ -52,7 +52,7 @@ Here's an example of **telegraf.conf**
   bucket = "XRRMonitoring"
 ```
 
-## gpuPerformanceStatistics usage
+## *gpuPerformanceStatistics* usage
 
  ```
  > gpuPerformanceStatistics --help
@@ -62,7 +62,7 @@ Here's an example of **telegraf.conf**
  
  On Intel and Apple silicon macs you can use the classname *IOAccelerator* to be safe or you can be more specific with something like *AMDRadeonX6000_AMDNavi23GraphicsAccelerator* (if you have multiple GPUs. **ioreg -l** is your friend to find your targets...)
 
-## main AMD GPU metrics (and more)
+## Main AMD GPU metrics (and more)
 
 * Core Clock (*MHz*)
 * Memory Clock (*MHz*)
