@@ -1,8 +1,8 @@
 
+
 # macos-telegraf-gpumonitoring
 
-Sharing a tool to get GPU information on intel mac (AMD GPU) and on Apple silicon (more limited)
-
+Sharing a tool to get GPU information from Intel and Apple silicon based macs. 
 This tool is used with telegraf to populate an Influxdb bucket to display stats in grafana;
 
 You like it? You use it? It saved you a couple of hours? 
@@ -18,7 +18,7 @@ Disclaimer, this code has been tested on:
 
 
 
-## Installation
+## Installation process
 
 * Copy **gpuPerformanceStatistics** to */usr/local/bin*
 * Update your **telegraf.conf** accordingly (see example bellow)
@@ -27,16 +27,13 @@ Disclaimer, this code has been tested on:
 * Enjoy
 
 GPU performance statistics are exported using Apple IOKitframework as a JSON. 
+
 Telegraf is configured to invoke **gpuPerformanceStatistics** (command line app) and parse the JSON output to ingest all available fields.
 
 Here's an example of **telegraf.conf** 
 
 ```
 [[inputs.execd]]
-  #On intel and apple silicon macs you can use the classname IOAccelerator 
-  #Or be more specific with something like AMDRadeonX6000_AMDNavi23GraphicsAccelerator if you want to target a specific gpu...
-  #(ioreg -l is your friend to find out)
-
   command = ["/usr/local/bin/gpuPerformanceStatistics", "IOAccelerator"]
   name_override = "macosgpu"
   signal = "none"
@@ -55,6 +52,15 @@ Here's an example of **telegraf.conf**
   bucket = "XRRMonitoring"
 ```
 
+## gpuPerformanceStatistics usage
+
+ ```
+ > gpuPerformanceStatistics --help
+ 
+ Usage: gpuPerformanceStatistics className
+ ```
+ 
+ On Intel and Apple silicon macs you can use the classname *IOAccelerator* to be safe or you can be more specific with something like *AMDRadeonX6000_AMDNavi23GraphicsAccelerator* (if you have multiple GPUs. **ioreg -l** is your friend to find your targets...)
 
 ## main AMD GPU metrics (and more)
 
