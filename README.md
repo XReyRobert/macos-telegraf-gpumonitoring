@@ -3,7 +3,7 @@
 # macos-telegraf-gpumonitoring
 
 Sharing a tool to get GPU information from Intel and Apple silicon based macs. 
-This tool is used with telegraf to populate an Influxdb bucket to display stats in grafana;
+This command line tool is used with telegraf to populate an Influxdb bucket to display stats in grafana;
 
 You like it? You use it? It saved you a couple of hours? 
 Hey 👋👋👋 [You can now buy me a coffee](https://www.buymeacoffee.com/xrrxrr)! ☕️ 
