@@ -1,5 +1,4 @@
 
-
 # macos-telegraf-gpumonitoring
 
 Sharing a tool to get GPU information on intel mac (AMD GPU) and on Apple silicon (more limited)
