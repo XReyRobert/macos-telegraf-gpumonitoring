@@ -1,15 +1,16 @@
-You like it ? You use it ? It saved you a couple of hours ? 
-Hey 👋 [You can now buy me a coffee](https://www.buymeacoffee.com/xrrxrr)! ☕️ 
+
 
 # macos-telegraf-gpumonitoring
-macos-telegraf-gpumonitoring
 
-
-Quickly sharing a tool to get GPU information on intel mac (AMD GPU) and on Apple silicon (more limited)
+Sharing a tool to get GPU information on intel mac (AMD GPU) and on Apple silicon (more limited)
 
 This tool is used with telegraf to populate an Influxdb bucket to display stats in grafana;
 
-Installation example:
+You like it? You use it? It saved you a couple of hours? 
+Hey 👋👋👋 [You can now buy me a coffee](https://www.buymeacoffee.com/xrrxrr)! ☕️ 
+
+
+## Installation
 
 * Copy **gpuPerformanceStatistics** to */usr/local/bin*
 * Update your **telegraf.conf** accordingly (see example bellow)
@@ -18,9 +19,9 @@ Installation example:
 * Enjoy
 
 GPU performance statistics are exported using Apple IOKitframework as a JSON. 
-Telegraf is configured to invoke *gpuPerformanceStatistics* command line app and parse the json to ingest all available fields)
+Telegraf is configured to invoke **gpuPerformanceStatistics** (command line app) and parse the JSON output to ingest all available fields.
 
-Here's an example of telegraf.conf
+Here's an example of **telegraf.conf** 
 
 ```
 [[inputs.execd]]
@@ -46,6 +47,29 @@ Here's an example of telegraf.conf
   bucket = "XRRMonitoring"
 ```
 
+## main AMD GPU metrics (and more)
+
+* Core Clock (*MHz*)
+* Memory Clock (*MHz*)
+* Total Power (*W*)
+* Device Utilization (*%*)
+* Temperature (*C*)
+* Fan Speed (*%*)
+* Fan Speed (*RPM*)
+* GPU Activity (*%*)
+
+## Apple Silicon metrics (that's all)
+
+* Device Utilization
+* Renderer Utilization 
+* Tiler Utilization
+* Alloc system memory
+* In use system memory
+
 ![intel mac / AMD GPU Screenshot](https://github.com/XReyRobert/macos-telegraf-gpumonitoring/raw/main/screenshots/screenshot_intelAmd.png?raw=true)
 
 ![Apple silicon Screenshot](https://github.com/XReyRobert/macos-telegraf-gpumonitoring/raw/main/screenshots/screenshot_applesilicon.png?raw=true)
+
+You like it? You use it? It saved you a couple of hours? 
+Hey 👋👋👋 [You can now buy me a coffee](https://www.buymeacoffee.com/xrrxrr)! ☕️ 
+
