@@ -43,5 +43,6 @@ Here's an example of telegraf.conf
   bucket = "XRRMonitoring"
 ```
 
-![intel mac / AMD GPU Screenshot](https://github.com/XReyRobert/macos-telegraf-gpumonitoring/raw/main/screenshots/screenshot_intelAmd.png?raw=true()
-![Apple silicon Screenshot](https://github.com/XReyRobert/macos-telegraf-gpumonitoring/raw/main/screenshots/screenshot_applesilicon.png?raw=true()
+![intel mac / AMD GPU Screenshot](https://github.com/XReyRobert/macos-telegraf-gpumonitoring/raw/main/screenshots/screenshot_intelAmd.png?raw=true)
+
+![Apple silicon Screenshot](https://github.com/XReyRobert/macos-telegraf-gpumonitoring/raw/main/screenshots/screenshot_applesilicon.png?raw=true)
